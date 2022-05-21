@@ -7,6 +7,7 @@ namespace DP_HWS2_Proxy_Mediator
         static void Main(string[] args)
         {
             #region Proxy
+<<<<<<< HEAD
             var interiorOffice = new InteriorOffice();
             Citizen agam = new Citizen("Agam", "Shalev", 546878168, DateTime.Parse("14/04/1991 05:04:30"), false);
             Citizen michael = new Citizen("Michael", "Nachum", 556897201, DateTime.Parse("27/08/1988 13:30:25"));
@@ -19,21 +20,21 @@ namespace DP_HWS2_Proxy_Mediator
             #endregion
 
             #region Mediator
-            //IFacebookGroup HackerUGroup = new FacebookGroup();
-            //IMember ortal = new Member(HackerUGroup, "ortal");
-            //IMember avital = new Member(HackerUGroup, "avital");
-            //IMember karina = new Member(HackerUGroup, "karina");
-            //IMember inna = new Member(HackerUGroup, "inna");
-            //IMember moran = new Member(HackerUGroup, "moran");
+            IFacebookGroup HackerUGroup = new FacebookGroup();
+            IMember ortal = new Member(HackerUGroup, "ortal");
+            IMember avital = new Member(HackerUGroup, "avital");
+            IMember karina = new Member(HackerUGroup, "karina");
+            IMember inna = new Member(HackerUGroup, "inna");
+            IMember moran = new Member(HackerUGroup, "moran");
 
-            //HackerUGroup.RegisterUser(ortal);
-            //HackerUGroup.RegisterUser(avital);
-            //HackerUGroup.RegisterUser(karina);
-            //HackerUGroup.RegisterUser(inna);
-            //HackerUGroup.RegisterUser(moran);
+            HackerUGroup.RegisterUser(ortal);
+            HackerUGroup.RegisterUser(avital);
+            HackerUGroup.RegisterUser(karina);
+            HackerUGroup.RegisterUser(inna);
+            HackerUGroup.RegisterUser(moran);
 
-            //ortal.Send("Hello! I'm Ortal");
-            //moran.Send("Hello! Wellcome Ortal!");
+            ortal.Send("Hello! I'm Ortal");
+            moran.Send("Hello! Wellcome Ortal!");
 
             #endregion
         }
